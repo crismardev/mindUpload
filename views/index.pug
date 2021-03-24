@@ -1,5 +1,9 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  .bg
+  .content
+    h1(class="text-white")= title
+    p(class="mt-3 mb-1") The next step in the human evolution
+    a(href="https://github.com/dacrife/mindUpload" class="text-white mt-0") https://github.com/dacrife/mindUpload
+    img(class="brain" src="/images/brain.png", alt="")
