@@ -2,8 +2,11 @@ extends layout
 
 block content
   .bg
-  .content
+  .content#container
     h1(class="text-white")= title
     p(class="mt-3 mb-1") The next step in the human evolution
     a(href="https://github.com/dacrife/mindUpload" class="text-white mt-0") https://github.com/dacrife/mindUpload
     img(class="brain" src="/images/brain.png", alt="")
+
+    audio#audioID(loop preload="auto")
+      source(src='/sounds/brain.mp3' type='audio/mp3')
